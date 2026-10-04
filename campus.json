@@ -1,0 +1,344 @@
+{
+  "meta": {
+    "description": "CU Technology Campus graph (nodes only from the given satellite map)",
+    "scale_m_per_pixel": 0.4,
+    "heuristic": "straight-line distance from (x,y) coordinates * scale_m_per_pixel",
+    "weight_unit": "metres (approximate walking distance)"
+  },
+  "nodes": {
+    "PLAY": {
+      "name": "Playground",
+      "x": 130,
+      "y": 770,
+      "zone": null,
+      "role": null
+    },
+    "PARK": {
+      "name": "Parking Area",
+      "x": 325,
+      "y": 745,
+      "zone": null,
+      "role": null
+    },
+    "T2F": {
+      "name": "Tower 2 Front Entry",
+      "x": 265,
+      "y": 783,
+      "zone": null,
+      "role": "tower_entry"
+    },
+    "T2R": {
+      "name": "Tower 2 Rear Entry",
+      "x": 460,
+      "y": 758,
+      "zone": null,
+      "role": "tower_entry"
+    },
+    "LIB": {
+      "name": "Library",
+      "x": 547,
+      "y": 760,
+      "zone": null,
+      "role": null
+    },
+    "LAB": {
+      "name": "CSE Laboratory",
+      "x": 360,
+      "y": 798,
+      "zone": "CSE",
+      "role": null
+    },
+    "REF": {
+      "name": "CSE_Reflxon Room",
+      "x": 300,
+      "y": 845,
+      "zone": "CSE",
+      "role": null
+    },
+    "AKC": {
+      "name": "CSE_AKC Seminar Hall",
+      "x": 395,
+      "y": 845,
+      "zone": "CSE",
+      "role": null
+    },
+    "LIFT": {
+      "name": "Lift Area",
+      "x": 507,
+      "y": 818,
+      "zone": null,
+      "role": "lift"
+    },
+    "GAR": {
+      "name": "Garden Area",
+      "x": 527,
+      "y": 880,
+      "zone": null,
+      "role": null
+    },
+    "POW": {
+      "name": "Power Area",
+      "x": 210,
+      "y": 900,
+      "zone": null,
+      "role": null
+    },
+    "CRNN": {
+      "name": "CRNN Centre",
+      "x": 325,
+      "y": 928,
+      "zone": null,
+      "role": null
+    },
+    "REC": {
+      "name": "Reception",
+      "x": 180,
+      "y": 968,
+      "zone": null,
+      "role": null
+    },
+    "CAN": {
+      "name": "Canteen",
+      "x": 180,
+      "y": 1028,
+      "zone": null,
+      "role": null
+    },
+    "AUD": {
+      "name": "Auditorium Hall",
+      "x": 380,
+      "y": 1036,
+      "zone": null,
+      "role": null
+    },
+    "NB1": {
+      "name": "New Building 1",
+      "x": 727,
+      "y": 888,
+      "zone": null,
+      "role": null
+    },
+    "NB2": {
+      "name": "New Building 2",
+      "x": 567,
+      "y": 1032,
+      "zone": null,
+      "role": null
+    },
+    "G1": {
+      "name": "Entry Gate 1 (G1)",
+      "x": 238,
+      "y": 1095,
+      "zone": null,
+      "role": null
+    },
+    "G2": {
+      "name": "Entry Gate 2 (G2)",
+      "x": 826,
+      "y": 1077,
+      "zone": null,
+      "role": null
+    },
+    "G3": {
+      "name": "Entry Gate 2 (G3)",
+      "x": 820,
+      "y": 888,
+      "zone": null,
+      "role": null
+    },
+    "G4": {
+      "name": "Entry Gate 2 (G4)",
+      "x": 792,
+      "y": 688,
+      "zone": null,
+      "role": null
+    }
+  },
+  "edges": [
+    {
+      "from": "PLAY",
+      "to": "PARK",
+      "weight": 95
+    },
+    {
+      "from": "PLAY",
+      "to": "POW",
+      "weight": 71
+    },
+    {
+      "from": "PLAY",
+      "to": "T2F",
+      "weight": 66
+    },
+    {
+      "from": "POW",
+      "to": "REC",
+      "weight": 33
+    },
+    {
+      "from": "REC",
+      "to": "CAN",
+      "weight": 27
+    },
+    {
+      "from": "CAN",
+      "to": "G1",
+      "weight": 43
+    },
+    {
+      "from": "REC",
+      "to": "CRNN",
+      "weight": 73
+    },
+    {
+      "from": "POW",
+      "to": "CRNN",
+      "weight": 57
+    },
+    {
+      "from": "CRNN",
+      "to": "AUD",
+      "weight": 56
+    },
+    {
+      "from": "CRNN",
+      "to": "T2F",
+      "weight": 82
+    },
+    {
+      "from": "CAN",
+      "to": "AUD",
+      "weight": 97
+    },
+    {
+      "from": "PARK",
+      "to": "T2F",
+      "weight": 33
+    },
+    {
+      "from": "PARK",
+      "to": "T2R",
+      "weight": 68
+    },
+    {
+      "from": "T2R",
+      "to": "LIB",
+      "weight": 39
+    },
+    {
+      "from": "T2R",
+      "to": "GAR",
+      "weight": 67
+    },
+    {
+      "from": "LIB",
+      "to": "GAR",
+      "weight": 61
+    },
+    {
+      "from": "LIB",
+      "to": "G4",
+      "weight": 133
+    },
+    {
+      "from": "GAR",
+      "to": "NB1",
+      "weight": 97
+    },
+    {
+      "from": "GAR",
+      "to": "NB2",
+      "weight": 76
+    },
+    {
+      "from": "GAR",
+      "to": "AUD",
+      "weight": 108
+    },
+    {
+      "from": "AUD",
+      "to": "NB2",
+      "weight": 90
+    },
+    {
+      "from": "AUD",
+      "to": "G1",
+      "weight": 80
+    },
+    {
+      "from": "NB1",
+      "to": "NB2",
+      "weight": 108
+    },
+    {
+      "from": "NB1",
+      "to": "G3",
+      "weight": 41
+    },
+    {
+      "from": "G3",
+      "to": "G4",
+      "weight": 89
+    },
+    {
+      "from": "G3",
+      "to": "G2",
+      "weight": 84
+    },
+    {
+      "from": "NB2",
+      "to": "G2",
+      "weight": 127
+    },
+    {
+      "from": "T2F",
+      "to": "LIFT",
+      "weight": 118
+    },
+    {
+      "from": "T2R",
+      "to": "LIFT",
+      "weight": 36
+    },
+    {
+      "from": "LIFT",
+      "to": "LAB",
+      "weight": 72
+    },
+    {
+      "from": "LIFT",
+      "to": "AKC",
+      "weight": 56
+    },
+    {
+      "from": "LIFT",
+      "to": "REF",
+      "weight": 109
+    },
+    {
+      "from": "LAB",
+      "to": "REF",
+      "weight": 37
+    },
+    {
+      "from": "LAB",
+      "to": "AKC",
+      "weight": 29
+    },
+    {
+      "from": "AKC",
+      "to": "REF",
+      "weight": 46
+    },
+    {
+      "from": "LIFT",
+      "to": "LIB",
+      "weight": 34
+    },
+    {
+      "from": "GAR",
+      "to": "LAB",
+      "weight": 97
+    }
+  ]
+}

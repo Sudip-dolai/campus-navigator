@@ -1,0 +1,33 @@
+Route,Agent,Path,Cost (m),Nodes Explored,Time (s),Optimal,Differs from other agent
+Reception -> Library,PATHFINDER,Reception -> CRNN Centre -> Tower 2 Front Entry -> Lift Area -> Tower 2 Rear Entry -> Library,348,6,0.000026,no,yes
+Reception -> Library,ORBIT,Reception -> Canteen -> Auditorium Hall -> Garden Area -> Library,293,12,0.000049,yes,yes
+Canteen -> New Building 2,PATHFINDER,Canteen -> Auditorium Hall -> New Building 2,187,3,0.000013,yes,no
+Canteen -> New Building 2,ORBIT,Canteen -> Auditorium Hall -> New Building 2,187,5,0.000021,yes,no
+Entry Gate 1 (G1) -> CSE Laboratory,PATHFINDER,Entry Gate 1 (G1) -> Auditorium Hall -> CRNN Centre -> Tower 2 Front Entry -> Lift Area -> CSE Laboratory,408,8,0.000032,no,yes
+Entry Gate 1 (G1) -> CSE Laboratory,ORBIT,Entry Gate 1 (G1) -> Auditorium Hall -> Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE Laboratory,363,15,0.000061,yes,yes
+Auditorium Hall -> CSE_AKC Seminar Hall,PATHFINDER,Auditorium Hall -> Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE_AKC Seminar Hall,267,6,0.000028,yes,no
+Auditorium Hall -> CSE_AKC Seminar Hall,ORBIT,Auditorium Hall -> Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE_AKC Seminar Hall,267,14,0.000054,yes,no
+Library -> Canteen,PATHFINDER,Library -> Garden Area -> Auditorium Hall -> Canteen,266,4,0.000017,yes,no
+Library -> Canteen,ORBIT,Library -> Garden Area -> Auditorium Hall -> Canteen,266,11,0.000048,yes,no
+Playground -> Entry Gate 2 (G2),PATHFINDER,Playground -> Parking Area -> Tower 2 Rear Entry -> Garden Area -> New Building 1 -> Entry Gate 2 (G3) -> Entry Gate 2 (G2),452,7,0.000026,no,yes
+Playground -> Entry Gate 2 (G2),ORBIT,Playground -> Power Area -> CRNN Centre -> Auditorium Hall -> New Building 2 -> Entry Gate 2 (G2),401,14,0.000062,yes,yes
+Entry Gate 1 (G1) -> Entry Gate 2 (G4),PATHFINDER,Entry Gate 1 (G1) -> Auditorium Hall -> Garden Area -> New Building 1 -> Entry Gate 2 (G3) -> Entry Gate 2 (G4),415,6,0.000023,no,yes
+Entry Gate 1 (G1) -> Entry Gate 2 (G4),ORBIT,Entry Gate 1 (G1) -> Auditorium Hall -> Garden Area -> Library -> Entry Gate 2 (G4),382,11,0.000047,yes,yes
+Power Area -> New Building 1,PATHFINDER,Power Area -> CRNN Centre -> Auditorium Hall -> Garden Area -> New Building 1,318,5,0.000023,no,yes
+Power Area -> New Building 1,ORBIT,Power Area -> CRNN Centre -> Auditorium Hall -> New Building 2 -> New Building 1,311,8,0.000035,yes,yes
+Parking Area -> Garden Area,PATHFINDER,Parking Area -> Tower 2 Rear Entry -> Garden Area,135,3,0.000012,yes,no
+Parking Area -> Garden Area,ORBIT,Parking Area -> Tower 2 Rear Entry -> Garden Area,135,4,0.000016,yes,no
+Entry Gate 2 (G3) -> CSE_Reflxon Room,PATHFINDER,Entry Gate 2 (G3) -> New Building 1 -> Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE_Reflxon Room,350,13,0.000056,no,yes
+Entry Gate 2 (G3) -> CSE_Reflxon Room,ORBIT,Entry Gate 2 (G3) -> New Building 1 -> Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE_AKC Seminar Hall -> CSE_Reflxon Room,343,15,0.000057,yes,yes
+CSE Laboratory -> Library,PATHFINDER,CSE Laboratory -> Lift Area -> Tower 2 Rear Entry -> Library,147,4,0.000019,yes,no
+CSE Laboratory -> Library,ORBIT,CSE Laboratory -> Lift Area -> Tower 2 Rear Entry -> Library,147,6,0.000021,yes,no
+CSE_AKC Seminar Hall -> Canteen,PATHFINDER,CSE_AKC Seminar Hall -> Lift Area -> Tower 2 Front Entry -> CRNN Centre -> Reception -> Canteen,356,8,0.000028,yes,no
+CSE_AKC Seminar Hall -> Canteen,ORBIT,CSE_AKC Seminar Hall -> Lift Area -> Tower 2 Front Entry -> CRNN Centre -> Reception -> Canteen,356,14,0.000060,yes,no
+CSE_Reflxon Room -> CSE_AKC Seminar Hall,PATHFINDER,CSE_Reflxon Room -> CSE_AKC Seminar Hall,46,2,0.000006,yes,no
+CSE_Reflxon Room -> CSE_AKC Seminar Hall,ORBIT,CSE_Reflxon Room -> CSE_AKC Seminar Hall,46,2,0.000006,yes,no
+Library -> CSE_Reflxon Room,PATHFINDER,Library -> Tower 2 Rear Entry -> Lift Area -> CSE_Reflxon Room,184,11,0.000043,no,yes
+Library -> CSE_Reflxon Room,ORBIT,Library -> Tower 2 Rear Entry -> Lift Area -> CSE_AKC Seminar Hall -> CSE_Reflxon Room,177,8,0.000033,yes,yes
+Garden Area -> CSE Laboratory,PATHFINDER,Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE Laboratory,175,7,0.000033,yes,no
+Garden Area -> CSE Laboratory,ORBIT,Garden Area -> Tower 2 Rear Entry -> Lift Area -> CSE Laboratory,175,6,0.000026,yes,no
+New Building 2 -> Library,PATHFINDER,New Building 2 -> Garden Area -> Library,137,3,0.000013,yes,no
+New Building 2 -> Library,ORBIT,New Building 2 -> Garden Area -> Library,137,3,0.000017,yes,no
